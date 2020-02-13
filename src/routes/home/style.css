@@ -1,0 +1,65 @@
+.home {
+	--clr-background-default: black;
+	--color-1: var(--clr-background-default);
+	--color-2: #cc0000ce;
+	--color-3: var(--clr-background-default);
+	--color-4: #004cffca;
+	padding: 3rem;
+}
+
+.window {
+	background-image: url(../../assets/imgs/browser-window.jpg);
+	background-position: center center;
+	background-size: cover;
+    width: 34rem;
+	height: 20rem;
+}
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	animation: Appear 1s ease;
+}
+
+.content {
+	animation: Appear 1s ease-in;
+}
+
+.red {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: linear-gradient(270deg, var(--color-1), var(--color-2));
+	background-size: 400% 400%;
+	/* -webkit-animation: AnimationName 15s ease infinite;
+	-moz-animation: AnimationName 15s ease infinite; */
+	animation: AnimationName 15s ease infinite;
+}
+
+.blue {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: linear-gradient(270deg, var(--color-3), var(--color-4));
+	background-size: 400% 400%;
+	/* -webkit-animation: AnimationName 15s ease infinite;
+	-moz-animation: AnimationName 15s ease infinite; */
+	animation: AnimationName 15s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Appear {
+    0%{opacity:0}
+    100%{opacity:1}
+}
