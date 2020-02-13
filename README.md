@@ -1,4 +1,4 @@
-# exposed
+# xpsd
 
 ## CLI Commands
 

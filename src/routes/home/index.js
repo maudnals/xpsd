@@ -19,19 +19,15 @@ class Profile extends Component {
 	render() {
 		const { showSteps, stepIdx } = this.state;
 		const { visibilityFilter } = this.props;
-		console.log('visibilityFilter', visibilityFilter);
 		const cl = stepIdx === 0 ? style.red : style.blue;
 		return (
 			<div class={style.home}>
 				<div>
-					<h1>XSS attack for cookie stealing</h1>
+					<h1>XSS attack for session hijacking</h1>
 					<div>[Summary]</div>
 					{/* todo templating */}
-					{/* <h1>victim - blue team - red team</h1> */}
-					{/* what happens */}
-					{/* how to see it */}
 					{/* play the attack as the victim */}
-					<button onClick={this.toggleShowSteps}>Play</button>
+					<button onClick={this.toggleShowSteps}>> Play</button>
 				</div>
 				{
 					showSteps &&
@@ -40,7 +36,7 @@ class Profile extends Component {
 							<div class={style.content}>
 								test
 							</div>
-							<div>XSS attack for cookie stealing</div>
+							<div>XSS attack for session hijacking</div>
 							<button onClick={this.toggleShowSteps}>Close</button>
 							{stepIdx === 0 &&
 								<>

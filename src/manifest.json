@@ -1,6 +1,6 @@
 {
-  "name": "exposed",
-  "short_name": "exposed",
+  "name": "xpsd",
+  "short_name": "xpsd",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",

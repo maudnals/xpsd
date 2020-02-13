@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500,700&display=swap');
 
 html, body {
+	--clr-txt: white;
+	--clr-background: #111215;
+	--clr-background-medium: #1a1b21;
+	--clr-theme-1: #da0000;
+	--clr-theme-1-80: #cc0000cc;
+	--clr-theme-1-10: #cc00001c;
+	--clr-theme-2: #004cff;
+	--clr-theme-2-80: #004cff2c;
+	--clr-theme-2-10: #004cff1c;
 	padding: 0;
 	margin: 0;
-	background: black;
 	font-family: 'Helvetica Neue', arial, sans-serif;
 	font-weight: 400;
-	color: white;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	font-size: 15px;
+	background: var(--clr-background);
+	color: var(--clr-txt);
 }
 
 * {
@@ -23,4 +31,32 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+	font-size: 2.4rem;
+}
+
+
+button {
+	color: var(--clr-theme-1);
+	border-color: var(--clr-theme-1);
+	background: var(--clr-theme-1-10);
+	border: solid 1px;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	margin: 0.5rem 0;
+	outline: none;
+	cursor: pointer;
+	transition: background-color 0.15s ease-out, color 0.15s ease-out;
+}
+
+button:hover {
+	color: var(--clr-theme-2);
+	background: var(--clr-theme-2-10);
+}
+
+body {
+	font-size: 1rem;
 }

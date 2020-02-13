@@ -1,8 +1,7 @@
 .header {
   height: 100vh;
   padding: 0;
-  background: #1a1b21;
-  color: black;
+  background: var(--clr-background-medium);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   width: 5rem;
 }
@@ -16,20 +15,16 @@
   padding: 1rem;
   width: 5rem;
   text-decoration: none;
-  color: #004cff;
+  color: var(--clr-theme-2);
   will-change: background-color;
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-out;
 }
 
 .header nav a:hover {
-  background: #004cff18;
+  background: #004cff11;
 }
 
 .header nav a:active,
 .header nav a.active {
-  background: #004cff3a;
-}
-
-.header nav a:visited {
-  /* color: inherit; */
+  background: #004cff2a;
 }
