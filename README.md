@@ -1,6 +1,8 @@
 # xpsd
 
-## CLI Commands
+Build with Preact.
+
+## Dev setup
 
 ``` bash
 # install dependencies
@@ -19,4 +21,4 @@ npm run serve
 npm run test
 ```
 
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
+How things work: see the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
