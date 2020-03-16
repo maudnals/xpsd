@@ -16,7 +16,6 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	animation: Appear 1s ease;
 }
 
 .content {
@@ -26,13 +25,13 @@
 /* todo webkit */
 .red {
 	background: linear-gradient(270deg, var(--clr-background), var(--clr-theme-1-80));
-	animation: MoveBackground 15s ease infinite;
+	animation: MoveBackground 15s ease infinite, Appear 0.3s ease-out;
 	background-size: 400% 400%;
 }
 
 .blue {
 	background: linear-gradient(270deg, var(--clr-background), var(--clr-theme-2-80));
-	animation: MoveBackground 15s ease infinite;
+	animation: MoveBackground 15s ease infinite, Appear 0.3s ease-out;
 	background-size: 400% 400%;
 }
 

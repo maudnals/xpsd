@@ -4,8 +4,10 @@ html, body {
 	--clr-txt: white;
 	--clr-background: #111215;
 	--clr-background-medium: #1a1b21;
+	--clr-theme-1-flash: #ff0000;
 	--clr-theme-1: #da0000;
 	--clr-theme-1-80: #cc0000cc;
+	--clr-theme-1-40: #cc000065;
 	--clr-theme-1-10: #cc00001c;
 	--clr-theme-2: #004cff;
 	--clr-theme-2-80: #004cff2c;
@@ -39,22 +41,38 @@ h1 {
 
 
 button {
-	color: var(--clr-theme-1);
-	border-color: var(--clr-theme-1);
+	color: var(--clr-theme-1-flash);
 	background: var(--clr-theme-1-10);
 	border: solid 1px;
+	border-color: var(--clr-theme-1);
 	font-family: 'Roboto Mono', monospace;
-	font-size: 1rem;
+	letter-spacing: 0.06rem;
+	font-size: 1.1rem;
+	text-transform: uppercase;
 	padding: 0.5rem 1rem;
 	margin: 0.5rem 0;
 	outline: none;
 	cursor: pointer;
-	transition: background-color 0.15s ease-out, color 0.15s ease-out;
 }
 
+
 button:hover {
-	color: var(--clr-theme-2);
-	background: var(--clr-theme-2-10);
+	animation: blinker 1.4s ease-out infinite;
+}
+
+@keyframes blinker {
+	0% {
+		color: var(--clr-theme-1-flash);
+		filter: drop-shadow(0px 0px 2px red);
+	}
+	20% {
+		color: var(--clr-theme-1-40);
+		filter: drop-shadow(0px 0px 2px red);
+	}
+	50% {
+		color: var(--clr-theme-1-flash);
+		filter: drop-shadow(0px 0px 2px red);
+	}
 }
 
 body {
